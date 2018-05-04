@@ -1,0 +1,6 @@
+<div *ngFor="let entry of entries">
+  <p>Title: {{entry.title}}</p>
+  <p>Date: {{entry.date}}</p>
+  <a [routerLink]="['/entry', entry._id ]">Detail</a>
+  <hr>
+</div>
